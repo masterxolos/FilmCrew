@@ -5,24 +5,24 @@ using UnityEngine;
 public class DetectPlayer : MonoBehaviour
 {
     [SerializeField] private GameObject light;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
     {
-        Ray ray = new Ray(light.transform.position, light.transform.forward);
+        
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(light.transform.position, light.transform.TransformDirection(Vector3.left), out hit, 10000));
         {
+            Debug.Log("Bir şeye çarptı");
+            Debug.DrawRay(light.transform.position, light.transform.TransformDirection(Vector3.left) * 10000);
             if (hit.collider.tag.Equals("Player"))
             {
                 Debug.Log("çarptııı");
+                
             }
  
         }
+
     }
 }
