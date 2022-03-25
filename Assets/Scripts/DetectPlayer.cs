@@ -18,7 +18,7 @@ public class DetectPlayer : MonoBehaviour
             Debug.DrawRay(raycastPoint.transform.position, raycastPoint.transform.TransformDirection(Vector3.down) * 10000);
             if (hit.collider.tag.Equals("Player"))
             {
-                Debug.Log("çarptııı");
+               GameEvents.current.RaycastHit();
                 
             }
  
