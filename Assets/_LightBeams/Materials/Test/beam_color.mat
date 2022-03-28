@@ -60,15 +60,17 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FadeDist: 25.5
+    - _FadeDist: 1000
     - _Glossiness: 0.5
-    - _LerpEnd: 1
-    - _LerpStart: -0
+    - _LerpEnd: 0.78
+    - _LerpStart: 1.1
     - _Metallic: 0
     - _Mode: 0
     - _Multiplier: 3.96
+    - _NormalPower: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Power: 9.18
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
