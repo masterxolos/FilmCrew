@@ -6277,7 +6277,7 @@ GameObject:
   - component: {fileID: 1702351430497284526}
   - component: {fileID: 1702351430498285166}
   m_Layer: 0
-  m_Name: '|Komodin'
+  m_Name: Komodin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
