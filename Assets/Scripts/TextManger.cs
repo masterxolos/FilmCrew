@@ -8,8 +8,12 @@ public class TextManger : MonoBehaviour
     [SerializeField] private GameObject prompterText;
     [SerializeField] private GameObject nextBubbleText;
     [SerializeField] private GameObject[] buttonText = new GameObject[2];
+    
+    
 
     [SerializeField] private GameObject instructionsText;
+
+    [SerializeField] private Animator adamAnimator;
     public void OpenPrompter()
     {
         Debug.Log("Button is pushed");
@@ -19,6 +23,7 @@ public class TextManger : MonoBehaviour
             buttonText[i].SetActive(false);
         }
         nextBubbleText.SetActive(true);
+        adamAnimator.SetBool("kızgın",true);
     }
 
 
