@@ -1265,6 +1265,49 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 19731f52e6bb8c84c9a3904c81fac327, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85977f177c7684d00953685612bf45f4, type: 3}
+--- !u!1 &1043213537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1043213539}
+  - component: {fileID: 1043213538}
+  m_Layer: 0
+  m_Name: GameEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1043213538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043213537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c63122b98e081a4f8176755466f134a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1043213539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043213537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 103.104904, y: 8.999998, z: -161.94687}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1136975517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2375,6 +2418,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7768122, y: 1.7775123, z: 0.69319224}
   m_Center: {x: -0.025684765, y: 0.89058846, z: 0.002465368}
+--- !u!114 &2094010955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094010951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ea0b8a5d3b370044a3bdbe0ca9566f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "kad\u0131nAnimator": {fileID: 2094010952}
 --- !u!4 &31691421149576560
 Transform:
   m_ObjectHideFlags: 0

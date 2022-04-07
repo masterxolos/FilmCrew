@@ -14,7 +14,11 @@ public class TextManger : MonoBehaviour
     [SerializeField] private GameObject instructionsText;
 
     [SerializeField] private Animator adamAnimator;
-    public void OpenPrompter()
+
+
+    [SerializeField] private int instructionYaziSuresi;
+    [SerializeField] private int bubbleYaziCıkmaSuresi;
+     public void OpenPrompter()
     {
         Debug.Log("Button is pushed");
         prompterText.SetActive(true);
@@ -35,7 +39,7 @@ public class TextManger : MonoBehaviour
 
     private IEnumerator WaitForBubbleText()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(bubbleYaziCıkmaSuresi);
         for (int i = 0; i < buttonText.Length; i++)
         {
             buttonText[i].transform.GetChild(0).gameObject.SetActive(true);
@@ -44,7 +48,7 @@ public class TextManger : MonoBehaviour
 
     private IEnumerator DissappearInstructions()
     {
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(instructionYaziSuresi);
         instructionsText.SetActive(false);
     }
         
