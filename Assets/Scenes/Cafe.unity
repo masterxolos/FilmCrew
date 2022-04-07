@@ -10486,6 +10486,7 @@ MonoBehaviour:
   buttonText:
   - {fileID: 16684067}
   - {fileID: 1779181300}
+  instructionsText: {fileID: 2036246187}
 --- !u!1 &879680012
 GameObject:
   m_ObjectHideFlags: 0

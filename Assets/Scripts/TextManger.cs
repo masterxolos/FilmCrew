@@ -8,6 +8,8 @@ public class TextManger : MonoBehaviour
     [SerializeField] private GameObject prompterText;
     [SerializeField] private GameObject nextBubbleText;
     [SerializeField] private GameObject[] buttonText = new GameObject[2];
+
+    [SerializeField] private GameObject instructionsText;
     public void OpenPrompter()
     {
         Debug.Log("Button is pushed");
@@ -22,6 +24,7 @@ public class TextManger : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(DissappearInstructions());
         StartCoroutine(WaitForBubbleText());
     }
 
@@ -33,4 +36,11 @@ public class TextManger : MonoBehaviour
             buttonText[i].transform.GetChild(0).gameObject.SetActive(true);
         }
     }
+
+    private IEnumerator DissappearInstructions()
+    {
+        yield return new WaitForSeconds(0.8f);
+        instructionsText.SetActive(false);
+    }
+        
 }
